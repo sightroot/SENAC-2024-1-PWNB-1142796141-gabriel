@@ -1,0 +1,237 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D3D3D3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5573BF;
+}
+
+h2{
+    color: #5573BF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    margin: 10px 0;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus, form button:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.redirect-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.redirect-button:hover {
+    background-color: #218838;
+}
+
+.project-section {
+    margin-bottom: 30px;
+}
+
+.project-list {
+    margin-top: 20px;
+}
+
+.project-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item .status-pending {
+    border-left-color: #ffc107;
+}
+
+.project-item .status-in-progress {
+    border-left-color: #17a2b8;
+}
+
+.project-item .status-completed {
+    border-left-color: #28a745;
+}
+
+.progress-bar-container {
+    background-color: #e9ecef;
+    border-radius: 13px;
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 20px;
+    border-radius: 10px;
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.team-members {
+    margin-top: 15px;
+}
+
+.team-members h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-members ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-members li {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-members input {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.team-members input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.team-members button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.team-members button:hover {
+    background-color: #0056b3;
+}
+
+.delete-member {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-member:hover {
+    background-color: #c82333;
+}
+
+.change-version {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.change-version:hover {
+    background-color: #e0a800;
+}
+
+/* Estilos para botões compartilhados */
+.change-status, .update-progress, .delete-project {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.change-status {
+    background-color: #17a2b8;
+}
+
+.change-status:hover {
+    background-color: #138496;
+}
+
+.update-progress {
+    background-color: #ffc107;
+}
+
+.update-progress:hover {
+    background-color: #e0a800;
+}
+
+.delete-project {
+    background-color: #dc3545;
+}
+
+.delete-project:hover {
+    background-color: #c82333;
+}

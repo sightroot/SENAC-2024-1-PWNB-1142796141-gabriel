@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerenciamento de Projetos</h1>
+        <a href="/pages/index.html" class="redirect-button">Ir para Tarefas</a>
+        <form id="project-form">
+            <input type="text" id="project-name" placeholder="Nome do Projeto" required>
+            <input type="text" id="team-member" placeholder="Nome do Membro da Equipe" required>
+            <input type="date" id="deadline" required>
+            <select id="status" required>
+                <option value="pending">Pendente</option>
+                <option value="in-progress">Em Progresso</option>
+                <option value="completed">Finalizado</option>
+            </select>
+            <input type="number" id="progress" placeholder="Progresso (%)" min="0" max="100" required>
+            <input type="text" id="project-version" placeholder="Versão do Projeto" required>
+            <input type="file" id="project-file" required>
+            <button type="submit">Adicionar Projeto</button>
+        </form>
+        <div class="project-section">
+            <h2>Projetos Pendentes</h2>
+            <div id="pending-projects" class="project-list"></div>
+        </div>
+        <div class="project-section">
+            <h2>Projetos em Progresso</h2>
+            <div id="in-progress-projects" class="project-list"></div>
+        </div>
+        <div class="project-section">
+            <h2>Projetos Finalizados</h2>
+            <div id="completed-projects" class="project-list"></div>
+        </div>
+    </div>
+    <script src="/gerenProjetos/script.js"></script>
+
+</body>
+</html>
